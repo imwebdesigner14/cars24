@@ -1,0 +1,968 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+}
+header{
+    height: 120px ;
+    width: 100%;
+   
+    
+    display: flex;
+    position: sticky;
+    top: 0;
+    
+}
+
+header > div{
+    height: 100%;
+    width: 50%;
+
+}
+
+header > .logo{
+    height: 100%;
+    width: 50%;
+    
+}
+header > .logo > p{
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+header > .unoderlist > ul{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   padding: 20px;
+ 
+   list-style: none;
+
+    
+}
+header > .unoderlist > ul > li{
+   margin-top: 35px;
+   margin-left: 30px;
+}
+
+header > .unoderlist > ul > li > a{
+    
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+    padding: 20px;
+   
+    border-radius: 10px;
+   
+}
+header > .unoderlist > ul > li > a:hover{
+    background-color: black ;
+    color: white;
+}
+
+
+
+/* header opening button starts form here */
+
+
+header > .button{
+    height: 50px;
+    width: 50px;
+    
+    margin-top: 50px;
+    margin-right: 200px;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    
+}
+
+header > .button > .line1{
+    height: 20px;
+    width: 100%;
+    border: 1px solid black ;
+    background-color: black;
+   
+    margin-top: 20px;
+    position: relative;
+}
+header > .button > .line1::before{
+    contain: '';
+    position: absolute;
+    top: -10px;
+    border: 1px solid black;
+    height: 5px;
+    width: 100%
+}
+
+header > .button > .line1::after{
+    contain: '';
+    position: absolute;
+    top: 15px;
+    border: 1px solid black;
+    height: 5px;
+    width: 100%
+}
+
+
+/* mobile header starts form here*/
+
+.mobileheader >  .unoderlist-div{
+    height: 180px;
+    width: 100%;
+    background-color: aqua;
+    display: none;
+    
+}
+
+
+.mobileheader >  .unoderlist-div > .unoderlist2{
+    height: 200px;
+    width: 100%;
+    background-color: khaki;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+   
+    
+   
+}
+
+.mobileheader >  .unoderlist-div > .unoderlist2 > li{
+  width: 100%;
+   
+}
+.mobileheader >  .unoderlist-div > .unoderlist2 > li:nth-child(2){
+    border-bottom: 1px solid black ;
+    border-top: 1px solid black ;
+}
+.mobileheader >  .unoderlist-div > .unoderlist2 > li:nth-child(3){
+    border-bottom: 1px solid black ;
+
+}
+
+
+.mobileheader >  .unoderlist-div > .unoderlist2 > li > a{
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 14px 20px ;
+   
+  
+}
+.mobileheader >  .unoderlist-div > .unoderlist2 > li > a:hover{
+    background-color: black ;
+    color: white;
+}
+
+
+
+/* header medaiqueary starts from here */
+
+@media ( max-width :1400px){
+    header > .logo > p{
+       width: 30%;
+       font-size: 40px;
+
+   
+    }
+     section > header > .unoderlist > ul > li > a{
+        font-size: 15px;
+    }
+
+  
+}
+
+@media ( max-width :1207px){
+    section > header > .unoderlist{
+        width: 70%;
+    }
+}
+@media ( max-width :1053px){
+    section > header > .unoderlist{
+        width: 80%;
+    }
+}
+@media ( max-width :1053px){
+    section > header > .unoderlist{
+        display: none;
+    }
+
+    section > header > .button{
+        display: block;
+        right: 40px;
+        margin-left: 200px;
+    } 
+
+}
+
+
+
+/* page1 css starts from here */
+.page1{
+    
+    height: 700px;
+    width: 100%;
+   
+}
+.page1 > nav > div{
+    height: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.page1 > nav > div > img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.page1 > nav > .saurch-box{
+    height: 500px;
+    width: 400px;
+   
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    display: flex;
+
+}
+
+.page1 > nav > .saurch-box > .box-heading{
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+
+    
+}
+
+.page1 > nav > .saurch-box > .box-heading > h2{
+    font-size: 30px;
+   margin-top: 20px;
+    text-align: center;
+}
+.page1 > nav > .saurch-box > .box-heading > input{
+    height: 50px;
+    width: 90%;
+   margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px; 
+   
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+
+
+.page1 > nav > .saurch-box > .box-heading > input:hover{
+    border: 1px solid orange;
+}
+
+
+.page1 > nav > .saurch-box > .box-heading > .get{
+    height: 50px;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 15px;
+
+}
+
+.page1 > nav > .saurch-box > .box-heading > .get > a{
+  padding-left: 103px;
+  padding-right: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 12px;
+    text-decoration: none;
+    color: black ;
+    font-size: 20px;
+    border: 0.5px solid black ;
+    background-color: orange;
+    margin-top: 30px;
+    margin-left: 30px;
+   
+
+}
+.page1 > nav > .saurch-box > .box-heading > .get > a:hover{
+    background-color: black ;
+    color: white;
+
+}
+.page1 > nav > .saurch-box > .box-heading > h3{
+    
+   text-align: center;
+}
+
+.page1 > nav > .saurch-box > .logos-box{
+    height: 25%;
+    width: 100%;
+  
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.page1 > nav > .saurch-box > .logos-box > .logos{
+    height: 70px;
+    width: 80px;
+    border: 0.5px solid black ;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.page1 > nav > .saurch-box > .logos-box2{
+    height: 25%;
+    width: 100%;
+    border-radius: 10px;
+   
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.page1 > nav > .saurch-box > .logos-box2 > .logos{
+    height: 70px;
+    width: 80px;
+    border: 0.5px solid black ;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 15px;
+}
+
+
+
+.page1 > nav > .saurch-box > .logos-box2 > .logos > img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.page1 > nav > .saurch-box > .logos-box > .logos > img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+.page1 > nav > .h1tags{
+    height: 400px;
+    width: 800px;
+   
+    background-color:transparent;
+    position: absolute;
+    top: 100px;
+    left: 550px;
+
+}
+
+.page1 > nav > .h1tags > h1{
+    color: white;
+    font-size: 50px;
+   margin-top: 60px;
+   margin-left: 50px;
+}
+
+/* page-2 css starts from here */
+
+
+.page2{
+    height: 700px;
+    width: 90%;
+    margin: 0 auto ;
+    
+}
+
+.page2 > nav > .h2tags > h2{
+   font-size: 35px;
+   font-family: sans-serif;
+   font-weight: 700;
+   margin-top: 60px;
+  
+}
+
+
+.page2 > nav > .sell-box{
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+   
+
+}
+
+.page2 > nav > .sell-box > .sell-boxs{
+    height: 100%;
+    width: 31%;
+    border: 0.5px solid black ;
+   
+    border-radius: 15px;
+    flex-flow: column;
+   
+}
+
+.page2 > nav > .sell-box > .sell-boxs > img{
+    height: 60%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.page2 > nav > .sell-box > .sell-boxs >h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 30px;
+    
+}
+
+.page2 > nav > .sell-box > .sell-boxs > p{
+    font-size: 20px;
+    margin: 20px;
+
+}
+
+
+
+/* page3 css strts from here */
+
+
+
+.page3{
+    height: 700px ;
+    width: 90%;
+   
+   
+    margin:0 auto;
+    margin-top: 70px;
+}
+
+.page3 > nav > .divforheading > h2{
+    font-size: 35px;
+
+}
+
+.page3 > nav > .divforbigbox{
+    height: 600px;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-top: 20px;
+  
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+
+.page3 > nav > .divforbigbox > .divforboxs{
+    height: 500px;
+    width: 21%;
+    border: 0.5px solid black ;
+    border-radius: 27px;
+  
+    margin-top: 50px;
+    transition: all 1s;
+
+}
+
+.page3 > nav > .divforbigbox > .divforboxs:hover{
+    height: 520px;
+    width:22% ;
+}
+
+.page3 > nav > .divforbigbox > .divforboxs > img{
+    height: 50%;
+    width: 100%;
+
+}
+
+.page3 > nav > .divforbigbox > .divforboxs > h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.page3 > nav > .divforbigbox > .divforboxs > p{
+    height: 25%;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: lightslategray;
+  
+
+}
+
+.page3 > nav > .divforbigbox > .divforboxs > a{
+    height: 50px;
+    width: 120px;
+    border: 0.5px solid black ;
+    border-radius: 10px;
+    color: black;
+    background-color:orange ;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    
+  
+
+}
+
+.page3 > nav > .divforbigbox > .divforboxs > a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/* page4 css starts from here */
+
+.page4{
+    height: 700px ;
+    width: 90%;
+    
+   
+  
+    margin: 0 auto;
+
+
+}
+
+.page4 > nav > .headingforbuy{
+    height: 100px;
+    width: 700px;
+  
+    margin-top: 30px;
+    margin-left:20px;
+}
+
+.page4 > nav > div > h2{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.page4 > nav > div > p{
+    font-size: 20px;
+}
+
+.page4 > nav > .imgandheading{
+    height: 150px ;
+    width: 800px;
+   
+    display: flex;
+
+
+}
+
+.page4 > nav > .imgandheading > .photo{
+    height: 100px;
+    width: 100px;
+   
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 10px;
+
+
+}
+.page4 > nav > .imgandheading > .photo > img{
+    height: 100%;
+    width: 100%;
+}
+
+.page4 > nav > .imgandheading > .headingforbuy{
+    height: 150px;
+    width: 600px;
+   
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.page4 > nav > .imgandheading > .headingforbuy > h2{
+
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 700;
+
+}
+.page4 > nav > .imgandheading > .headingforbuy > p{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+
+.page4 > nav > .questions{
+    height: 50px;
+    width: 400px;
+    
+    margin-left: 20px;
+    display: flex;
+}
+
+.page4 > nav > .questions > a{
+    font-size:20px ;
+    color: orange;
+    text-decoration:none ;
+}
+
+
+
+
+/* page5 css starts from here */
+
+
+.page5{
+    height: 700px;
+    width: 100%;
+    background-color: #007bff;
+}
+
+
+.page5 > nav {
+    height: 100%;
+    width: 90%;
+   
+    margin: 0 auto;
+}
+
+
+.page5 > nav > .headingforrecent{
+    height: 50px;
+    width: 300px;
+    color: white;
+    font-family: sans-serif;
+    
+
+}
+
+.page5 > nav > .headingforrecent > h2{
+    padding: 30px;
+   
+}
+
+.page5 > nav > .boxnewcar{
+    height: 500px;
+    width: 100%;
+    margin-top: 40px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.page5 > nav > .boxnewcar >.boxnewcars{
+    height: 450px;
+    width: 22%;
+    
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s;
+  
+  
+
+} 
+
+.page5 > nav > .boxnewcar >.boxnewcars:hover{
+    height:460px ;
+    width: 22.5%;
+}
+
+.page5 > nav > .boxnewcar >.boxnewcars > img{
+    height: 40%;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.page5 > nav > .boxnewcar >.boxnewcars > h4{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+.page5 > nav > .boxnewcar >.boxnewcars > p{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    color: lightslategray;
+    font-size: 12px;
+}
+
+.page5 > nav > .boxnewcar >.boxnewcars > ul{
+    list-style: none;
+    display: flex;
+   
+
+}
+.page5 > nav > .boxnewcar >.boxnewcars > ul > li{
+    
+   width: 100%;
+    font-size: 10px;
+    margin-top: 30px;
+    justify-content: space-around;
+    text-align: center;
+    
+   
+}
+
+.page5 > nav > .boxnewcar >.boxnewcars > ul > li > p{
+    background-color: whitesmoke;
+    padding: 5px;
+    
+    width: 90%;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.page5 > nav > .boxnewcar >.boxnewcars > .ul2 > li{
+    font-size: 25px; 
+}
+
+.page5 > nav > .veiw{
+    height: 50px;
+    width: 150px;
+    background-color: darkorange;
+    color: white;
+    text-align: center;
+    padding: 13px;
+    border-radius: 12px;
+    margin-left: 20px;
+    font-family: sans-serif;
+    
+
+
+}
+
+
+/* page 6 css start from here */
+
+
+
+.page6{
+    height: 600px;
+    width: 90%;
+   
+    margin: 0 auto;
+   
+}
+
+
+
+    
+.page6 > nav > div > h3{
+    margin-top: 30px;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 900;
+    padding: 20px;
+}
+
+
+.page6 > nav > .bigbox06{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.page6 > nav > .bigbox06 > .box06{
+    height: 450px;
+    width: 22%;
+    border: 0.5px solid black ;
+    border-radius: 10px;
+    transition: all 1s;
+
+}
+
+.page6 > nav > .bigbox06 > .box06:hover{
+    height: 460px;
+    width: 22.2%;
+   
+
+}
+
+.page6 > nav > .bigbox06 > .box06 > img{
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.page6 > nav > .bigbox06 > .box06 > p{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: lightslategrey;
+    margin: 10px 10px;
+    text-align: center;
+
+}
+
+.page6 > nav > .bigbox06 > .box06 > h2{
+   
+    font-weight: 900;
+    margin: 30px 10px;
+    text-align: center;
+}
+
+
+/* page 7 css starts from here */
+
+
+.page7{
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    
+}
+
+.page7 > nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.page7 > nav > .headingforlastimg{
+    height: 500px;
+    width: 50%;
+   
+  
+
+
+
+}
+.page7 > nav > .headingforlastimg > h2{
+    text-align: center;
+    font-size: 45px;
+    font-family: sans-serif;
+    margin-top: 100px;
+    color: #007bff;
+}
+
+.page7 > nav > .headingforlastimg > P{
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-top: 50px;
+    color: lightslategray;
+
+}
+
+.page7 > nav > .headingforlastimg > .an > a{
+    
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+   
+    background-color: darkorange;
+    border-radius: 10px;
+   
+
+
+}
+
+
+
+.page7 > nav >.imgforlastimg{
+    height: 500px;
+    width: 50%;
+   
+    
+}
+
+.page7 > nav >.imgforlastimg > img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* page 8 css starts from here */
+
+.page8{
+    height: 300px;
+    width: 100%;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+
+.page8 > nav{
+    
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.page8 > nav > .firstdiv{
+    height: 100%;
+    width: 25%;
+   
+
+}
+
+.page8 > nav > .firstdiv > h2{
+    
+    font-weight: 500;
+    padding: 20px;
+
+}
+
+
+
+.page8 > nav > .firstdiv > p{
+
+    font-family: sans-serif;
+    font-weight: 500;
+    padding: 20px;
+    color: grey;
+}
+
+.page8 > nav > .firstdiv > img{
+    padding: 20px;
+}
+
+.page8 > nav > .firstdiv > .secondimg{
+    padding: 20px;
+}
